@@ -1,0 +1,9 @@
+
+{
+  "name": "basechain-blitz",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "deploy:base": "hardhat run scripts/deploy-base-mainnet.ts --network base"
+  }
+}
