@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   const GMMC = "0x3D9B15274E579411555FF1F96fE9E1ABf3Df4b07";
-  const OWNER = "0xf95DA8869B27C642aA8F7d106F866e777914c2E3";
+  const OWNER = "0x280Dd16034ccE95205Ac524aF5070e630f32EDa2";
 
   const Contract = await ethers.getContractFactory("DailyCheckInAttestation");
   const contract = await Contract.deploy(GMMC, OWNER);
