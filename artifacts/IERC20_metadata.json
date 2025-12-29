@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DailyCheckInAttestation.sol": "IERC20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DailyCheckInAttestation.sol": {
+			"keccak256": "0xb74ee0579624ea7ce2e641df86dd2c37f3d9cbbe84b161e5c36cde43ef642130",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef869b50270559f3e27d1cc5fe8e97952c8a14638c2ae7e94992e96f4fc30f1e",
+				"dweb:/ipfs/QmcwnjDXDrvySo4F2fyzkGM3My6kYA2KjVoVXsXLc4P6vz"
+			]
+		}
+	},
+	"version": 1
+}

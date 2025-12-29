@@ -1,0 +1,178 @@
+{
+  "accounts": {
+    "account{0}": "0x4e26fc6eb05a1cdbd762609fde9958e5b8cc754d"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1767031771318,
+      "record": {
+        "value": "0",
+        "inputs": "(address,address)",
+        "parameters": [
+          "0x3D9B15274E579411555FF1F96fE9E1ABf3Df4b07",
+          "0x280Dd16034ccE95205Ac524aF5070e630f32EDa2"
+        ],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x1d680df291f2cc9ee9717ffd02941a58168d21b6575b3c0211ff982c7b8e0ae3",
+        "contractName": "DailyCheckInAttestation",
+        "bytecode": "60a0604052674563918244f4000060015534801561001b575f80fd5b5060405161050638038061050683398101604081905261003a9161007c565b6001600160a01b039182166080525f80546001600160a01b031916919092161790556100ad565b80516001600160a01b0381168114610077575f80fd5b919050565b5f806040838503121561008d575f80fd5b61009683610061565b91506100a460208401610061565b90509250929050565b60805161043a6100cc5f395f81816101050152610231015261043a5ff3fe608060405234801561000f575f80fd5b506004361061007a575f3560e01c8063293be45611610058578063293be456146100ed5780636c82da76146101005780638da5cb5b1461013f578063f7b2a7be14610151575f80fd5b8063183ff0851461007e5780631acc9b621461008857806327cfe856146100d5575b5f80fd5b61008661015a565b005b6100b561009636600461033d565b600260208190525f918252604090912080546001820154919092015483565b604080519384526020840192909252908201526060015b60405180910390f35b6100df6201518081565b6040519081526020016100cc565b6100866100fb36600461036a565b6102f3565b6101277f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020016100cc565b5f54610127906001600160a01b031681565b6100df60015481565b5f6101686201518042610395565b335f90815260026020526040902080549192509082116101c45760405162461bcd60e51b815260206004820152601260248201527120b63932b0b23c9031b432b1b5b2b21034b760711b60448201526064015b60405180910390fd5b6101cf6001836103b4565b8154036101f157600181018054905f6101e7836103cd565b91905055506101f8565b6001818101555b818155600281018054905f61020c836103cd565b909155505060015460405163a9059cbb60e01b815233600482015260248101919091527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03169063a9059cbb906044016020604051808303815f875af115801561027f573d5f803e3d5ffd5b505050506040513d601f19601f820116820180604052508101906102a391906103e5565b506001810154600282015460408051858152602081019390935282015233907f7e4c1be4a7f9736334ae1a21a54b75fe0b8ac49d1c72b89a21ec4802d4f6fabb9060600160405180910390a25050565b5f546001600160a01b031633146103385760405162461bcd60e51b81526020600482015260096024820152682737ba1037bbb732b960b91b60448201526064016101bb565b600155565b5f6020828403121561034d575f80fd5b81356001600160a01b0381168114610363575f80fd5b9392505050565b5f6020828403121561037a575f80fd5b5035919050565b634e487b7160e01b5f52601160045260245ffd5b5f826103af57634e487b7160e01b5f52601260045260245ffd5b500490565b818103818111156103c7576103c7610381565b92915050565b5f600182016103de576103de610381565b5060010190565b5f602082840312156103f5575f80fd5b81518015158114610363575f80fdfea2646970667358221220eb3f23410ea646de17b870a125e8498ab054918143e4845c2976381077d7f5f664736f6c63430008140033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    }
+  ],
+  "abis": {
+    "0x1d680df291f2cc9ee9717ffd02941a58168d21b6575b3c0211ff982c7b8e0ae3": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_gmmc",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_owner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "day",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "streak",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "total",
+            "type": "uint256"
+          }
+        ],
+        "name": "CheckedIn",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "DAY",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "GMMC",
+        "outputs": [
+          {
+            "internalType": "contract IERC20",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "checkIn",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "checkIns",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "lastDay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "streak",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "rewardAmount",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "setReward",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ]
+  }
+}
